@@ -25,13 +25,23 @@ header {
   margin-bottom: 30px;
 }
 
-form {
-  padding: 30px;
+.form-container {
   background: white;
+  margin-bottom: 30px;
+  padding: 20px 30px;
   border-radius: 10px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+form {
   display: flex;
-  margin-bottom: 30px;
+}
+
+.hint {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 5px;
+  opacity: 0.6;
 }
 
 .search-bar {
@@ -63,6 +73,10 @@ form {
   font-style: italic;
   line-height: 2;
   border-left: 3px solid #5c5470;
+}
+
+.hidden {
+  display: none;
 }
 
 .poem strong {

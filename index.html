@@ -14,17 +14,21 @@
         <h1>AI Poem Generator</h1>
       </header>
       <main>
-        <form id="poem-form">
-          <input
-            type="search"
-            placeholder="Enter the topic of the poem"
-            class="search-bar"
-            id="keyword"
-            required
-          />
-          <input type="submit" value="Search" class="submit-button" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="poem-form">
+            <input
+              type="search"
+              placeholder="Enter the topic of the poem"
+              class="search-bar"
+              id="keyword"
+              required
+            />
+            <input type="submit" value="Search" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Love, Frienship, Summer</div>
+        </div>
+
+        <div class="poem hidden" id="poem"></div>
       </main>
       <footer>
         This project was coded by Aleksandra Jablonska and is open-sourced on
