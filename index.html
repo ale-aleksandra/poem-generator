@@ -3,38 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Poem Generator</title>
   </head>
   <body>
     <div class="container">
-    <header>
-      <h1>AI Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="search"
-          placeholder="Enter the topic of the poem"
-          class="search-bar"
-          required
-        />
-        <input type="submit" value="Search" class="submit-button"/>
-      </form>
-      <div id="poem">
-        Lorem ipsum dolor sit amet, <br />
-        consectetur adipiscing elit,
-        <br />
-        sed do eiusmod tempor incididunt
-      </div>
-    </main>
+      <header>
+        <h1>AI Poem Generator</h1>
+      </header>
+      <main>
+        <form id="poem-form">
+          <input
+            type="search"
+            placeholder="Enter the topic of the poem"
+            class="search-bar"
+            required
+          />
+          <input type="submit" value="Search" class="submit-button" />
+        </form>
+        <div class="poem" id="poem"></div>
+      </main>
+      <footer>
+        This project was coded by Aleksandra Jablonska and is open-sourced on
+        <a
+          href="https://github.com/ale-aleksandra/poem-generator"
+          target="_blank"
+          >GitHub</a
+        >.
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
   </body>
-  <footer>
-    This project was coded by Aleksandra Jablonska and is open-sourced on
-    <a href="https://github.com/ale-aleksandra/poem-generator" target="_blank"
-      >GitHub</a
-    >.
-  </footer>
-  </div>
-  <script src="src/index.js"></script>
 </html>
